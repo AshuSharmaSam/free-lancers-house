@@ -26,8 +26,8 @@ function Services(props) {
             <Row>
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                 <div className="service-box">
-                  <div style={{width:"200px",height:"200px",backgroundColor:"yellow",borderRadius:"50%",alignSelf:"center",padding:"15%"}}>
-                  <img src="/static/images/rr.png" style={{width:"100%"}}/>
+                  <div id="x">
+                  <img src="/static/images/rr.png" />
                   </div>
                   <h3>
                     <Service name= {strings.home.services.web.heading} description={strings.home.services.web.content}/>
@@ -45,8 +45,8 @@ function Services(props) {
               </Col>
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                 <div className="service-box">
-                <div style={{width:"200px",height:"200px",backgroundColor:"yellow",borderRadius:"50%",alignSelf:"center",padding:"15%"}}>
-                  <img src="/static/images/apps2.png" style={{width:"100%"}}/>
+                <div id="x">
+                  <img src="/static/images/apps2.png" />
                   </div>
                   <h3>
                   <Service name= {strings.home.services.mobile.heading} description={strings.home.services.mobile.content}/>
@@ -64,8 +64,8 @@ function Services(props) {
               </Col>
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                 <div className="service-box">
-                <div style={{width:"200px",height:"200px",backgroundColor:"yellow",borderRadius:"50%",alignSelf:"center",padding:"15%"}}>
-                  <img src="/static/images/graphics.png"  style={{width:"100%"}} />
+                <div id="x">
+                  <img src="/static/images/graphics.png" />
                   </div>
                   <h3>
                   <Service name= {strings.home.services.graphics.heading} description={strings.home.services.graphics.content}/>
@@ -92,8 +92,8 @@ function Services(props) {
             <Row>
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                 <div className="service-box">
-                  <div style={{width:"200px",height:"200px",backgroundColor:"yellow",borderRadius:"50%",alignSelf:"center",padding:"15%"}}>
-                  <img src="/static/images/devopss.png"  style={{width:"100%"}} />
+                  <div id="x">
+                  <img src="/static/images/devopss.png"  />
                   </div>
                   <h3>
                   <Service name= {strings.home.services.devops.heading} description={strings.home.services.devops.content}/>
@@ -111,8 +111,8 @@ function Services(props) {
               </Col>
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                 <div className="service-box">
-               <div style={{width:"200px",height:"200px",backgroundColor:"yellow",borderRadius:"50%",alignSelf:"center",padding:"15%"}}>
-                  <img src="/static/images/marketings.png"  style={{width:"100%"}} />
+               <div id="x">
+                  <img src="/static/images/marketings.png"   />
                   </div>
                   <h3>
                   <Service name= {strings.home.services.digital.heading} description={strings.home.services.digital.content}/>
@@ -130,8 +130,8 @@ function Services(props) {
               </Col>
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                 <div className="service-box">
-                <div style={{width:"200px",height:"200px",backgroundColor:"yellow",borderRadius:"50%",alignSelf:"center",padding:"15%"}}>
-                  <img src="/static/images/bits.png"  style={{width:"100%"}} />
+                <div id="x">
+                  <img src="/static/images/bits.png"  />
                   </div>
                   <h3>
                   <Service name= {strings.home.services.blockchain.heading} description={strings.home.services.blockchain.content}/>
@@ -159,9 +159,19 @@ function Services(props) {
           flex-direction: column;
           padding-bottom: 30px;
         }
+        .service-box #x{
+          width:200px;
+          height:200px;
+          background-color:yellow;
+          border-radius:50%;
+          align-self:center;
+          padding:15%;
+
+        }
         .service-box img {
           max-width: 300px;
           margin: 0 auto 30px;
+          width:100%;
         }
         .service-box h3 {
           text-align: center;
