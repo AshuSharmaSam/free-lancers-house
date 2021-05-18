@@ -23,12 +23,12 @@ const  HeaderComponent=()=> {
           
           <Row >
             <Col span={24}>
-            <nav className="header-container" style={{justifyContent:"start"}}>
+            <nav className="header-container" >
            
                 <ul className="desktop-nav" >
                   <li className="ab">
                     <Link href="/">
-                      <img  style={{width:"100%"}} src="/static/images/logo1.png" />
+                      <img np src="/static/images/logo1.png" />
                     </Link>
                     </li>
                    <li className={router.asPath == "/" ? "active" : ""}>
@@ -46,7 +46,7 @@ const  HeaderComponent=()=> {
                     </li>
                    <li className="logo">
                      <Link href="/">
-                      <img  style={{width: "100%"}} src="/static/images/logo.png" />
+                      <img   src="/static/images/logo.png" />
                      </Link>
                     </li>
                   <li className={router.asPath == "/portfolio" ? "active" : ""} >
@@ -71,7 +71,7 @@ const  HeaderComponent=()=> {
                 <ul className="mobile-nav">
                   <li className="logo" >
                     <Link href="/">
-                      <img  style={{width:"33%"}} src="/static/images/logo.png"  />
+                      <img  src="/static/images/logo.png"  />
                     </Link>
                   </li>
                 </ul>
@@ -234,6 +234,7 @@ const  HeaderComponent=()=> {
           . img {
             width:100%;
           }
+          
         `}</style>
       </Layout>
     );

@@ -40,6 +40,13 @@
             }
             
         },
+        "banner":{
+            "banner1":"https://unsplash.it/1600/800?image=507",
+            "banner2":"https://unsplash.it/1600/800?image=502",
+            "banner3":"https://unsplash.it/1600/800?image=503",
+            "banner4":"https://unsplash.it/1600/800?image=501"
+            
+        },
         "featured":{
             "heading":"FEATURED WORK",
             "subheading":"WE TAKE PRIDE IN OUR WORK",
@@ -114,7 +121,7 @@
         "ending":" © 2019 All Rights Reserved. Developed by Free_Lancers_House"
     },
     "about":{
-        "intro":{
+               "intro":{
             "heading":"ABOUT US",
             "subheading":"Innovating with a Digital Mindset",
             "content1":" We are a boutique digital transformation consultancy and development company.",

@@ -31,7 +31,7 @@ header {
     .ant-col {
       .header-container {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         height: 100px;
         ul {
@@ -46,6 +46,9 @@ header {
             li {
               display: flex;
               align-items: center;
+              img{
+                width:100%;
+              }
 
               a {
                 color: $whiteShadeLight;
@@ -62,8 +65,8 @@ header {
               }
               &.ab{
                 width:250px;
-                margin-right:50px;
-                filter:brightness(150%);
+                margin-right:100px;
+                filter:brightness(350%);
               }
               &.logo {
                 height: 150px;
@@ -102,17 +105,24 @@ header {
         @media (max-width: 767px) {
           ul {
             position: relative;
+            
+            
             &.desktop-nav {
               display: none;
             }
             &.mobile-nav {
               display: block;
+              
               li {
                 display: flex;
-                align-items: center;
+                align-items: start;
+                img{
+                  width:33%;
+                }
                 &.logo {
-                  position: relative;
+                  position:relative;
                   z-index: 9;
+                
                 }
               }
             }
