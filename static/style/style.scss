@@ -6,6 +6,23 @@ $white: rgba(255, 255, 255, 1);
 $orange: #f59720;
 $heading: #3f3f3f;
 $subHeading: rgba(2, 2, 2, 0.46);
+$white: #fff;
+$red1:rgba(0, 0, 0, 0.15);
+$white_opacity:rgba(255, 255, 255, 0.85);
+$black_opacity:rgba(0, 0, 0, 0.2);
+$dark_gray:#393939;
+$bright_yellow:#f6c427;
+$lightshade_gray:#ddd;
+$raisin_black:#232323;
+$bright_yellow_opacity:#f6c427;
+$very_dark_gray:#3f3f3f;
+$bright_gray:#eaeaea;
+$orange:#f59720;
+$cinder:#212230;
+$white_opacity19:rgba(255, 255, 255, 0.19);
+$black_opacity14:rgba(0, 0, 0, 0.14);
+$black_opacity44:rgba(0, 0, 0, 0.44);
+$black_opacity5:rgba(0, 0, 0, 0.5);
 
 @import "~antd/dist/antd.css";
 @import "slickSlider";
@@ -65,7 +82,7 @@ header {
               }
               &.ab{
                 width:250px;
-                margin-right:40px;
+                margin-right:100px;
                 filter:brightness(350%);
               }
               &.logo {
@@ -517,4 +534,286 @@ FOOTER
   border-radius:50%;
   align-self:center;
   padding:15%;
+}
+.whatwedo-list {
+  float: right;
+  width: 500px;
+  padding: 100px 50px 100px 0;
+  color: $white;
+}
+.whatwedo-list h2 {
+  text-transform: uppercase;
+  color: $white;
+  font-size: 36px;
+}
+.whatwedo-list .ant-collapse {
+  background: transparent;
+}
+.ant-collapse-borderless > .ant-collapse-item {
+  border: 0;
+  margin-bottom: 15px;
+}
+.whatwedo-list .ant-collapse .ant-collapse-header {
+  color:$white;
+  font-size: 18px;
+  font-weight: bold;
+  background: hsl(236, 19%, 18%);
+}
+.whatwedo-list .ant-collapse .ant-collapse-content {
+  color:$white;
+  font-size: 18px;
+}
+
+@media (max-width: 1150px) and (min-width: 992px) {
+  .whatwedo-list {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .whatwedo-list {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .whatwedo-list {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+.sol-container i {
+  font-size: 24px;
+}
+.sol-container {
+  padding: 40px;
+  border: 1px solid $lightshade_gray;
+  border-radius: 4px;
+  margin: 0 20px;
+}
+.sol-container h4 {
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+.sol-container p{
+  color:black;
+}
+.ant-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.ant-row-middle {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+h1 {
+  text-transform: uppercase;
+}
+h2 {
+  color:black;
+  text-transform: normal;
+}
+p {
+color:black;
+}
+.button a {
+  font-family: "PT Sans Narrow", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.3em;
+  fill: $dark_gray;
+  color: $dark_gray;
+  background-color: $bright_yellow;
+  border-radius: 0px 0px 0px 0px;
+  padding: 17px 25px 17px 25px;
+  display: inline-block;
+}
+.pl50 {
+  padding-left: 50px;
+}
+@media (max-width: 767px) {
+  .pl50 {
+    padding: 0;
+  }
+}
+.contact-form {
+  background: $white;
+
+  padding: 50px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.ant-select-selection--single,
+.ant-select-selection-selected-value,
+.ant-input {
+  height: 44px;
+  line-height: 44px;
+}
+form .ant-mentions,
+form textarea.ant-input {
+  height: 150px;
+}
+h1 {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.ant-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.ant-row-middle {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.ant-btn-primary {
+  background: $bright_yellow;
+  font-family: "PT Sans Narrow", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.3em;
+  fill:  $dark_gray;
+  color:  $dark_gray;
+  background-color: $bright_yellow;
+  border-radius: 0px 0px 0px 0px;
+  padding: 17px 25px 17px 25px;
+  display: inline-block;
+  height: auto;
+  border: 0;
+}
+.ant-select-selection:hover,
+.ant-input:hover {
+  border-color: $bright_yellow;
+  border-right-width: 1px !important;
+}
+.ant-input:focus {
+  border-color: $bright_yellow;
+}
+.ant-select-selection:active,
+.ant-select-selection:focus,
+.ant-input:focus {
+  border-color: $bright_yellow;
+  border-right-width: 1px !important;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px  $bright_yellow_opacity;
+  box-shadow: 0 0 0 2px $bright_yellow_opacity;
+}
+.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color:$bright_yellow_opacity;
+}
+
+.ant-btn:active,
+.ant-btn.active {
+  border-color:$bright_yellow;
+}
+.ant-btn-primary:hover,
+.ant-btn-primary:focus,
+.ant-btn:hover,
+.ant-btn:focus {
+  border-color: $bright_yellow;
+  background: $bright_yellow;
+}
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color:$white;
+}
+p {
+  color: black;
+  padding: 0 40px 0 0;
+}
+@media (max-width: 767px) {
+  p {
+    padding: 0;
+  }
+}
+.featured-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height:200px;
+  width:400px;
+  overflow: hidden;
+ 
+}
+.box h3{
+  text-align:center;
+  justify-content:center;
+  overflow:hidden;
+  color:white;
+}
+.featured-box img {
+  width: 100%;
+  padding: 10px;
+  transform-origin: 0 0;
+  transition: transform .25s, visibility .25s ease-in;
+  transform-origin: center center;
+
+   }
+.featured-box :hover img{
+  transform: scale(1.2);
+ 
+}
+.service-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.service-box #x{
+  width:200px;
+  height:200px;
+  background-color:yellow;
+  border-radius:50%;
+  align-self:center;
+  padding:15%;
+
+}
+.service-box img {
+  max-width: 300px;
+  margin: 0 auto 30px;
+  width:100%;
+}
+.service-box h3 {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.service-box p {
+  padding-left: 30px;
+  padding-right: 30px;
+  color:black;
+}
+.footer-section h4 {
+  color: $dark_gray;
+  font-family: "Fira Sans", Sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-section p {
+  font-size: 15px;
+  font-weight: 300;
+  color:black;
+}
+
+.copy {
+  background-color: $bright_gray;
+  display: block;
+  text-align: center;
+  padding: 50px 0;
 }

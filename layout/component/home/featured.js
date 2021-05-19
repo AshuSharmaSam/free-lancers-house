@@ -4,6 +4,7 @@ import Link from "next/link";
 import strings from "../../../static/lang/eng/eng.json";
 import TranslateText from "../../common/translateText";
 import Images from "../../common/SeoComponent/image"
+import "../../../static/style/style.scss";
 function Featured(props) {
   return (
     <Layout className="page-section featured">
@@ -122,35 +123,8 @@ function Featured(props) {
           </div>
         </Col>
       </Row>
-      <style jsx>{`
-        .featured-box {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          height:200px;
-          width:400px;
-          overflow: hidden;
-         
-        }
-        .box h3{
-          text-align:center;
-          justify-content:center;
-          overflow:hidden;
-          color:white;
-        }
-        .featured-box img {
-          width: 100%;
-          padding: 10px;
-          transform-origin: 0 0;
-          transition: transform .25s, visibility .25s ease-in;
-          transform-origin: center center;
-        
-           }
-        .featured-box :hover img{
-          transform: scale(1.2);
-         
-        }
-      `}</style>
+      
+    
     </Layout>
   );
 }

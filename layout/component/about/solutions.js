@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Layout, Row, Col, Icon } from "antd";
 import strings from "../../../static/lang/eng/eng.json";
 import TranslateText from "../../common/translateText";
-import { designConstants } from "../../../static/themeDesign";
+import "../../../static/style/style.scss";
 export default function Solutions() {
   return (
     <Layout className="page-section">
@@ -57,23 +57,7 @@ export default function Solutions() {
           </Col>
         </Row>
       </div>
-      <style jsx global>{`
-        .sol-container i {
-          font-size: 24px;
-        }
-        .sol-container {
-          padding: 40px;
-          border: 1px solid ${designConstants.colors.lightshade_gray};
-          border-radius: 4px;
-          margin: 0 20px;
-        }
-        .sol-container h4 {
-          line-height: 36px;
-          font-size: 22px;
-          font-weight: 600;
-          color: ${designConstants.colors.raisin_black};
-        }
-      `}</style>
+      
     </Layout>
   );
 }

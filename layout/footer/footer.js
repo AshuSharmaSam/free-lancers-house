@@ -7,6 +7,7 @@ import Address from "../common/SeoComponent/address"
 import { designConstants } from "../../static/themeDesign";
 import {LinkedinFilled ,FacebookFilled,InstagramFilled}  from '@ant-design/icons';
 import Link from "next/link";
+import "../../static/style/style.scss";
 function FooterPage(props) {
   return (
     <Layout>
@@ -109,24 +110,7 @@ function FooterPage(props) {
         />
       </div>
       <style jsx>{`
-        .footer-section h4 {
-          color: ${designConstants.colors.dark_gray};
-          font-family: "Fira Sans", Sans-serif;
-          font-size: 15px;
-          font-weight: 700;
-          text-transform: uppercase;
-        }
-        .footer-section p {
-          font-size: 15px;
-          font-weight: 300;
-        }
-
-        .copy {
-          background-color: ${designConstants.colors.bright_gray};
-          display: block;
-          text-align: center;
-          padding: 50px 0;
-        }
+       
       `}</style>
     </Layout>
   );

@@ -4,6 +4,7 @@ import strings from "../../../static/lang/eng/eng.json";
 import TranslateText from "../../common/translateText";
 import Images from "../../common/SeoComponent/image";
 import { designConstants } from "../../../static/themeDesign.js";
+import "../../../static/style/style.scss";
 //const {  Form, Input, Button,Select,Layout, Row, Col } = antd;
 const layout = {
   labelCol: { span: 24 },
@@ -115,91 +116,7 @@ const Contactform = () => {
           </Col>
         </Row>
       </div>
-      <style jsx global>{`
-        .contact-form {
-          background: ${designConstants.colors.white};
-
-          padding: 50px;
-          border-radius: 5px;
-          margin-left: 50px;
-        }
-        .ant-select-selection--single,
-        .ant-select-selection-selected-value,
-        .ant-input {
-          height: 44px;
-          line-height: 44px;
-        }
-        form .ant-mentions,
-        form textarea.ant-input {
-          height: 150px;
-        }
-        h1 {
-          text-transform: uppercase;
-          margin-top: 50px;
-        }
-
-        .ant-row {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-        }
-        .ant-row-middle {
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-        }
-        .ant-btn-primary {
-          background: ${designConstants.colors.bright_yellow};
-          font-family: "PT Sans Narrow", Sans-serif;
-          font-size: 17px;
-          font-weight: 400;
-          line-height: 1.3em;
-          fill:  ${designConstants.colors.dark_gray};
-          color:  ${designConstants.colors.dark_gray};
-          background-color: ${designConstants.colors.bright_yellow};
-          border-radius: 0px 0px 0px 0px;
-          padding: 17px 25px 17px 25px;
-          display: inline-block;
-          height: auto;
-          border: 0;
-        }
-        .ant-select-selection:hover,
-        .ant-input:hover {
-          border-color: ${designConstants.colors.bright_yellow};
-          border-right-width: 1px !important;
-        }
-        .ant-input:focus {
-          border-color: ${designConstants.colors.bright_yellow};
-        }
-        .ant-select-selection:active,
-        .ant-select-selection:focus,
-        .ant-input:focus {
-          border-color: ${designConstants.colors.bright_yellow};
-          border-right-width: 1px !important;
-          outline: 0;
-          -webkit-box-shadow: 0 0 0 2px  ${designConstants.colors.bright_yellow_opacity};
-          box-shadow: 0 0 0 2px ${designConstants.colors.bright_yellow_opacity};
-        }
-        .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
-          background-color:${designConstants.colors.bright_yellow_opacity};
-        }
-
-        .ant-btn:active,
-        .ant-btn.active {
-          border-color:${designConstants.colors.bright_yellow};
-        }
-        .ant-btn-primary:hover,
-        .ant-btn-primary:focus,
-        .ant-btn:hover,
-        .ant-btn:focus {
-          border-color: ${designConstants.colors.bright_yellow};
-          background: ${designConstants.colors.bright_yellow};
-        }
-      `}</style>
+      
     </Layout>
   );
 };

@@ -4,6 +4,7 @@ import strings from "../../../static/lang/eng/eng.json";
 import TranslateText from "../../common/translateText";
 import { designConstants } from "../../../static/themeDesign";
 import Images from "../../common/SeoComponent/image";
+import "../../../static/style/style.scss";
 export default function Intro() {
   return (
     <Layout className="page-section">
@@ -47,51 +48,7 @@ export default function Intro() {
           </Col>
         </Row>
       </div>
-      <style jsx global>{`
-        .ant-row {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-        }
-        .ant-row-middle {
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-        }
-        h1 {
-          text-transform: uppercase;
-        }
-        h2 {
-          color: rgba(2, 2, 2, 0.46);
-          text-transform: normal;
-        }
-        p {
-        }
-        .button a {
-          font-family: "PT Sans Narrow", Sans-serif;
-          font-size: 17px;
-          font-weight: 400;
-          line-height: 1.3em;
-          fill: ${designConstants.colors.dark_gray};
-          color: ${designConstants.colors.dark_gray};
-          background-color: ${designConstants.colors.bright_yellow};
-          border-radius: 0px 0px 0px 0px;
-          padding: 17px 25px 17px 25px;
-          display: inline-block;
-        }
-        .pl50 {
-          padding-left: 50px;
-        }
-        @media (max-width: 767px) {
-          .pl50 {
-            padding: 0;
-          }
-        }
-      `}</style>
+      
     </Layout>
   );
 }

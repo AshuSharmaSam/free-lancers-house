@@ -4,7 +4,7 @@ import TranslateText from "../../common/translateText";
 import Service from "../../common/SeoComponent/services"
 import { Layout, Row, Col } from "antd";
 import strings from "../../../static/lang/eng/eng.json";
-
+import "../../../static/style/style.scss";
 function Services(props) {
   return (
     <Layout className="page-section">
@@ -152,38 +152,7 @@ function Services(props) {
           </div>
         </Col>
       </Row>
-      <style jsx>{`
-        .service-box {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          padding-bottom: 30px;
-        }
-        .service-box #x{
-          width:200px;
-          height:200px;
-          background-color:yellow;
-          border-radius:50%;
-          align-self:center;
-          padding:15%;
-
-        }
-        .service-box img {
-          max-width: 300px;
-          margin: 0 auto 30px;
-          width:100%;
-        }
-        .service-box h3 {
-          text-align: center;
-          font-size: 20px;
-          text-transform: uppercase;
-        }
-        .service-box p {
-          padding-left: 30px;
-          padding-right: 30px;
-        }
-   
-      `}</style>
+      
     </Layout>
   );
 }

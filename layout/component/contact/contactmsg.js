@@ -4,7 +4,7 @@ import Link from "next/link";
 import strings from "../../../static/lang/eng/eng.json";
 import TranslateText from "../../common/translateText";
 import { designConstants } from "../../../static/themeDesign.js";
-
+import "../../../static/style/style.scss";
 function ContactMsg(props) {
   return (
     <Layout className="wrapper-section orange">
@@ -37,22 +37,7 @@ function ContactMsg(props) {
           </Row>
         </div>
       </div>
-      <style jsx>{`
-        h2 {
-          font-size: 30px;
-          text-transform: uppercase;
-          color:${designConstants.colors.white};
-        }
-        p {
-          color: ${designConstants.colors.white};
-          padding: 0 40px 0 0;
-        }
-        @media (max-width: 767px) {
-          p {
-            padding: 0;
-          }
-        }
-      `}</style>
+      
     </Layout>
   );
 }

@@ -6,6 +6,7 @@ import TranslateText from "../../common/translateText";
 import { designConstants } from "../../../static/themeDesign";
 import Service from "../../common/SeoComponent/services"
 import Images from "../../common/SeoComponent/image";
+import "../../../static/style/style.scss";
 const { Panel } = Collapse;
 
 export default function Whatwedo() {
@@ -241,55 +242,6 @@ export default function Whatwedo() {
         
       </Row>
 
-      <style jsx global>{`
-        .whatwedo-list {
-          float: right;
-          width: 500px;
-          padding: 100px 50px 100px 0;
-          color: ${designConstants.colors.white};
-        }
-        .whatwedo-list h2 {
-          text-transform: uppercase;
-          color: ${designConstants.colors.white};
-          font-size: 36px;
-        }
-        .whatwedo-list .ant-collapse {
-          background: transparent;
-        }
-        .ant-collapse-borderless > .ant-collapse-item {
-          border: 0;
-          margin-bottom: 15px;
-        }
-        .whatwedo-list .ant-collapse .ant-collapse-header {
-          color:${designConstants.colors.white};
-          font-size: 18px;
-          font-weight: bold;
-          background: hsl(236, 19%, 18%);
-        }
-        .whatwedo-list .ant-collapse .ant-collapse-content {
-          color:${designConstants.colors.white};
-          font-size: 18px;
-        }
-
-        @media (max-width: 1150px) and (min-width: 992px) {
-          .whatwedo-list {
-            width: 100%;
-            padding: 40px 20px;
-          }
-        }
-        @media (max-width: 991px) and (min-width: 768px) {
-          .whatwedo-list {
-            width: 100%;
-            padding: 40px 20px;
-          }
-        }
-        @media (max-width: 767px) {
-          .whatwedo-list {
-            width: 100%;
-            padding: 40px 20px;
-          }
-        }
-      `}</style>
     </Layout>
   );
 }
