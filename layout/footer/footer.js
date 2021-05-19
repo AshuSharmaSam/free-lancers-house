@@ -6,8 +6,7 @@ import TranslateText from "../common/translateText";
 import Address from "../common/SeoComponent/address"
 import { designConstants } from "../../static/themeDesign";
 import {LinkedinFilled ,FacebookFilled,InstagramFilled}  from '@ant-design/icons';
-
-  
+import Link from "next/link";
 function FooterPage(props) {
   return (
     <Layout>
@@ -84,9 +83,16 @@ function FooterPage(props) {
                       />
                       </h4>
                     <p>
+                    <Link href="https://www.facebook.com/">
                       <FacebookFilled  style={{ fontSize: '30px', color: '#3b5998 ' }}/>
-                      <LinkedinFilled  style={{ fontSize: '30px', color: '#0077b5' }}/>
-                      <InstagramFilled  style={{ fontSize: '30px', color: '#cd486b' }}/>
+                    </Link>
+                    <Link href="https://www.Linkedin.com/">
+                    <LinkedinFilled  style={{ fontSize: '30px', color: '#0077b5' }}/>
+                    </Link>
+                    <Link href="https://www.Instagram.com/">
+                    <InstagramFilled  style={{ fontSize: '30px', color: '#cd486b' }}/>
+                    </Link>
+                      
                     </p>
                   </div>
                 </Col>
