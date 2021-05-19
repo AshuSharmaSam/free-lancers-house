@@ -12,6 +12,12 @@ export default function Whatwedo() {
   return (
     <Layout className="page-section">
       <Row className="ant-row-middle">
+      <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+          <div className="image-container" >
+            <Images image="/static/images/whatwedo.jpg"/>
+            <img src="/static/images/whatwedo.jpg" />
+          </div>
+        </Col>
         <Col
           xs={24}
           sm={24}
@@ -42,10 +48,10 @@ export default function Whatwedo() {
             </p>
             <Collapse bordered={false} defaultActiveKey={["1"]}  accordion>
               <Panel header="WEB DEVELOPMENT" key="1">
-                <Collapse defaultActiveKey="1">
+                <Collapse >
                 <Service name= "FRONT END TECHNOLOGY"/>
                   <Panel header="FRONT END TECHNOLOGY" key="1">
-                    <Collapse defaultActiveKey="1">
+                    <Collapse >
                       <Panel header="REACT JS" key="1" >
                         <p style={{color:"black"}}>
                         <Service name= {"REACT JS"} description={strings.about.react.heading}/>
@@ -232,12 +238,7 @@ export default function Whatwedo() {
             </Collapse>
           </div>
         </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-          <div className="image-container">
-            <Images image="/static/images/whatwedo.jpg"/>
-            <img src="/static/images/whatwedo.jpg" />
-          </div>
-        </Col>
+        
       </Row>
 
       <style jsx global>{`
