@@ -47,14 +47,14 @@ export default function Whatwedo() {
                     text=  {strings.about.wedo.subheading2}
                   />
             </p>
-            <Collapse bordered={false} defaultActiveKey={["1"]}  accordion>
+            <Collapse bordered={false}   accordion >
               <Panel header="WEB DEVELOPMENT" key="1">
                 <Collapse >
                 <Service name= "FRONT END TECHNOLOGY"/>
                   <Panel header="FRONT END TECHNOLOGY" key="1">
                     <Collapse >
                       <Panel header="REACT JS" key="1" >
-                        <p style={{color:"black"}}>
+                        <p>
                         <Service name= {"REACT JS"} description={strings.about.react.heading}/>
                           <TranslateText 
                           text=  {strings.about.react.heading}
@@ -62,7 +62,7 @@ export default function Whatwedo() {
                         </p>
                       </Panel>
                       <Panel header="ANGULAR" key="2">
-                        <p style={{color:"black"}}>
+                        <p>
                         <Service name= {"ANGULAR"} description={strings.about.angular.heading}/>
                           <TranslateText 
                           text=  {strings.about.angular.heading}
@@ -70,7 +70,7 @@ export default function Whatwedo() {
                         </p>
                       </Panel>
                       <Panel header="HTML" key="3">
-                        <p style={{color:"black"}}>
+                        <p >
                         <Service name= {"HTML"} description={strings.about.html.heading}/>
                           <TranslateText 
                           text=  {strings.about.html.heading}
@@ -78,7 +78,7 @@ export default function Whatwedo() {
                         </p>
                       </Panel>
                       <Panel header="CSS/SCSS" key="4">
-                        <p style={{color:"black"}}>
+                        <p >
                         <Service name= {"CSS"} description={strings.about.css.heading}/>
                           <TranslateText 
                           text=  {strings.about.css.heading}
@@ -86,7 +86,7 @@ export default function Whatwedo() {
                         </p>
                       </Panel>
                       <Panel header="J-QUERY" key="5">
-                        <p style={{color:"black"}}>
+                        <p >
                         <Service name= {"J-QUERY"} description={strings.about.jquery.heading}/>
                           <TranslateText 
                           text=  {strings.about.jquery.heading}
@@ -94,7 +94,7 @@ export default function Whatwedo() {
                         </p>
                      </Panel>
                      <Panel header="VUE" key="6">
-                       <p style={{color:"black"}}>
+                       <p >
                        <Service name= {"VUE"} description={strings.about.vue.heading}/>
                          <TranslateText 
                          text=  {strings.about.vue.heading}
@@ -102,7 +102,7 @@ export default function Whatwedo() {
                        </p>
                      </Panel>
                      <Panel header="NEXT JS" key="7">
-                       <p style={{color:"black"}}>
+                       <p >
                        <Service name= {"Next Js"} description={strings.about.next.heading}/>
                          <TranslateText 
                          text=  {strings.about.next.heading}
@@ -110,7 +110,7 @@ export default function Whatwedo() {
                        </p>
                      </Panel>
                      <Panel header="PHP" key="7">
-                       <p style={{color:"black"}}>
+                       <p >
                        <Service name= {"PHP"} description={strings.about.php.heading}/>
                          <TranslateText 
                           text=  {strings.about.php.heading}
@@ -118,7 +118,7 @@ export default function Whatwedo() {
                         </p>
                      </Panel>
                      <Panel header="JAVASCRIPT" key="9">
-                       <p style={{color:"black"}}>
+                       <p >
                        <Service name= {"JAVASCRIPT"} description={strings.about.javascript.heading}/>
                          <TranslateText 
                           text=  {strings.about.javascript.heading}
@@ -128,20 +128,20 @@ export default function Whatwedo() {
                    </Collapse>  
                  </Panel>
                </Collapse>
-               <Collapse defaultActiveKey="1">
+               <Collapse >
                <Service name= {"BACK END TECHNOLOGY"}/>
                  <Panel header="BACK END TECHNOLOGY" key="2">
-                   <Collapse defaultActiveKey="1">
+                   <Collapse>
                      <Panel header="NODE JS" key="1">
                      <Service name= {"NODE JS"} description={strings.about.node.heading}/>
-                       <p style={{color:"black"}}>
+                       <p>
                          <TranslateText 
                          text=  {strings.about.node.heading}
                          />
                         </p>
                      </Panel>
                      <Panel header="JAVA" key="2">
-                       <p style={{color:"black"}}>
+                       <p >
                        <Service name= {"JAVA"} description={strings.about.java.heading}/>
                          <TranslateText 
                           text=  {strings.about.java.heading}
@@ -149,7 +149,7 @@ export default function Whatwedo() {
                         </p>
                      </Panel>
                      <Panel header="SCALA" key="3">
-                        <p style={{color:"black"}}>
+                        <p >
                         <Service name= {"SCALA"} description={strings.about.scala.heading}/>
                           <TranslateText 
                            text=  {strings.about.scala.heading}
@@ -157,7 +157,7 @@ export default function Whatwedo() {
                         </p>
                       </Panel>
                       <Panel header="LARAVEL" key="4">
-                        <p style={{color:"black"}}>
+                        <p>
                         <Service name= {"LARAVEL"} description={strings.about.laravel.heading}/>
                           <TranslateText 
                            text=  {strings.about.laravel.heading}
@@ -165,7 +165,7 @@ export default function Whatwedo() {
                         </p>
                      </Panel>
                      <Panel header="J-QUERY" key="5">
-                       <p style={{color:"black"}}>
+                       <p >
                        <Service name= {"J-QUERY"} description={strings.about.jquery.heading}/>
                          <TranslateText 
                          text=  {strings.about.jquery.heading}
@@ -173,7 +173,7 @@ export default function Whatwedo() {
                         </p>
                      </Panel>
                      <Panel header="PYTHON" key="7">
-                       <p style={{color:"black"}}>
+                       <p >
                        <Service name= {"PYTHON"} description={strings.about.python.heading}/>
                          <TranslateText 
                           text=  {strings.about.python.heading}
@@ -189,7 +189,7 @@ export default function Whatwedo() {
                        </p>
                      </Panel>
                      <Panel header="SQL" key="9">
-                       <p style={{color:"black"}}>
+                       <p >
                        <Service name= {"SQL"} description={strings.about.sql.heading}/>
                          <TranslateText 
                          text=  {strings.about.sql.heading}
@@ -202,9 +202,9 @@ export default function Whatwedo() {
               </Panel>
               <Service name= {"MOBILE APP DEVELOPMENT"} />
               <Panel header="MOBILE APP DEVELOPMENT" key="2">
-                <Collapse defaultActiveKey="1">
+                <Collapse >
                 <Panel header="REACT NATIVE" key="1">
-                    <p style={{color:"black"}}>
+                    <p >
                     <Service name= {"REACT NATIVE"} description={strings.about.native.heading}/>
                       <TranslateText 
                       text=  {strings.about.native.heading}
@@ -212,7 +212,7 @@ export default function Whatwedo() {
                     </p>
                   </Panel>
                   <Panel header="FLUTTER" key="2">
-                    <p style={{color:"black"}}>
+                    <p >
                     <Service name= {"FLUTTER"} description={strings.about.flutter.heading}/>
                       <TranslateText 
                       text=  {strings.about.flutter.heading}
@@ -220,7 +220,7 @@ export default function Whatwedo() {
                     </p>
                   </Panel>
                   <Panel header="IONIC ANDROID IOS" key="3">
-                    <p style={{color:"black"}}>
+                    <p >
                     <Service name= {"IONIC ANDROID IOS"} description={strings.about.android.heading}/>
                       <TranslateText 
                        text=  {strings.about.android.heading}

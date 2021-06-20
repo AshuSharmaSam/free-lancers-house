@@ -14,7 +14,7 @@ export default function Solutions() {
               <h4>
               <TranslateText
                     text= {strings.about.solutions.content1.heading}
-                  />
+                  /> 
               </h4>
               <p>
                
